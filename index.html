@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class ="containter">
+      <div class ="row">
+        <div class ="col-sm-6">
+          <h3>Register a new account:</h3>
+          <form id="register">
+            <label for="name">Full Name</label>
+            <input type="text" class="name">
+            <label for="initial-deposit">Initial Deposit</label>
+            <input type="number" class="initial-deposit">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class ="col-sm-6">
+          <h3>Deposit or withdraw funds:</h3>
+          <form id="transaction">
+            <label for="additional-deposit">Additional Deposit</label>
+            <input type="number" class="additional-deposit">
+            <label for="withdrawl">Withdrawl</label>
+            <input type="number" class="withdrawl">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="row output">
+        <div class="col-sm-6">
+          <h3 id='creation'></h3>
+        </div>
+        <div class="col-sm-6">
+          <ul id='output'>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
